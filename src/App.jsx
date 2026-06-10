@@ -182,7 +182,7 @@ const scrollRef = useRef(null);
   return (
     <div className="min-h-screen bg-slate-50 antialiased selection:bg-[#bb2924] selection:text-white">
       {/* Navbar */}
-      <header className="bg-gradient-to-r from-[#1d0d66] to-[#2914a8] text-white shadow-md fixed w-full top-0 left-0 z-50">
+<header className="bg-blue-900 text-white shadow-md fixed w-full top-0 left-0 z-50">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 py-3.5">
 
           {/* Logo and Branding */}
