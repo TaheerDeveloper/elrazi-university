@@ -479,7 +479,7 @@ const scrollRef = useRef(null);
       <div className="cursor-pointer relative group rounded-2xl p-6 bg-white border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center flex flex-col items-center">
         {/* Absolute Centered Floating Icon Badge */}
         <div className="absolute -top-7 left-1/2 -translate-x-1/2 bg-gradient-to-br from-[#1d0d66] to-[#1d0d66] w-14 h-14 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-red-900/20 group-hover:scale-110 group-hover:rotate-3 transition duration-300">
-          <Award className="w-6 h-6" />
+          <Award className="w-6 h-6 text-blue-500" />
         </div>
         <div className="pt-8 flex-1 flex flex-col justify-between">
           <div>
