@@ -463,87 +463,84 @@ const scrollRef = useRef(null);
 {/* 4 Feature Boxes in Row - Left Aligned Icons */}
 {/* Modern White Feature Grid Section */}
 <section className="relative bg-slate-50 py-24 font-poppins">
-  
-  {/* Subtle decorative mesh background glow */}
-  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full pointer-events-none overflow-hidden">
+
+  {/* Background glow */}
+  <div className="absolute inset-0 pointer-events-none overflow-hidden">
     <div className="absolute -top-32 left-1/4 w-96 h-96 bg-blue-100/40 blur-[120px] rounded-full" />
-    <div className="absolute top-1/2 right-1/4 w-96 h-96 bg-red-50/50 blur-[120px] rounded-full" />
+    <div className="absolute top-1/2 right-1/4 w-96 h-96 bg-slate-100/40 blur-[120px] rounded-full" />
   </div>
 
   <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
 
-    {/* Services Grid with top gap margin to accommodate floating center icons */}
-    <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4 pt-6">
+    <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
 
+      {/* CARD TEMPLATE */}
+      
       {/* Card 1 */}
-      <div className="cursor-pointer relative group rounded-2xl p-6 bg-white border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center flex flex-col items-center">
-        {/* Absolute Centered Floating Icon Badge */}
-        <div className="absolute -top-7 left-1/2 -translate-x-1/2 bg-gradient-to-br from-[#1d0d66] to-[#1d0d66] w-14 h-14 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-red-900/20 group-hover:scale-110 group-hover:rotate-3 transition duration-300">
-          <Award className="w-6 h-6 text-blue-500" />
+      <div className="group relative rounded-2xl p-6 bg-white border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center">
+
+        <div className="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 rounded-2xl bg-white shadow-md flex items-center justify-center border border-slate-100">
+          <Award className="w-6 h-6 text-blue-600" />
         </div>
-        <div className="pt-8 flex-1 flex flex-col justify-between">
-          <div>
-            <h3 className="text-lg font-bold text-slate-950 mb-3 transition-colors duration-300 group-hover:text-[#1d0d66]">
-              Top Rank University
-            </h3>
-            <p className="text-slate-600 text-sm leading-relaxed font-light">
-              Ranked among the top universities in Sudan, EMUK excels in academics and research.
-            </p>
-          </div>
+
+        <div className="pt-10">
+          <h3 className="text-lg font-semibold text-slate-900 mb-3 group-hover:text-blue-700 transition-colors">
+            Top Rank University
+          </h3>
+          <p className="text-sm text-slate-600 leading-relaxed">
+            Ranked among the top universities in Sudan, EMUK excels in academics and research.
+          </p>
         </div>
       </div>
 
       {/* Card 2 */}
-      <div className="cursor-pointer relative group rounded-2xl p-6 bg-white border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center flex flex-col items-center">
-        {/* Absolute Centered Floating Icon Badge */}
-        <div className="absolute -top-7 left-1/2 -translate-x-1/2 bg-gradient-to-br from-[#1d0d66] to-[#1d0d66] w-14 h-14 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-red-900/20 group-hover:scale-110 group-hover:rotate-3 transition duration-300">
-          <BookOpen className="w-6 h-6" />
+      <div className="group relative rounded-2xl p-6 bg-white border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center">
+
+        <div className="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 rounded-2xl bg-white shadow-md flex items-center justify-center border border-slate-100">
+          <BookOpen className="w-6 h-6 text-blue-600" />
         </div>
-        <div className="pt-8 flex-1 flex flex-col justify-between">
-          <div>
-            <h3 className="text-lg font-bold text-slate-950 mb-3 transition-colors duration-300 group-hover:text-[#1d0d66]">
-              Standard Syllabus
-            </h3>
-            <p className="text-slate-600 text-sm leading-relaxed font-light">
-              Our syllabus meets NUC standards, ensuring quality and international competitiveness.
-            </p>
-          </div>
+
+        <div className="pt-10">
+          <h3 className="text-lg font-semibold text-slate-900 mb-3 group-hover:text-blue-700 transition-colors">
+            Standard Syllabus
+          </h3>
+          <p className="text-sm text-slate-600 leading-relaxed">
+            Our syllabus meets NUC standards, ensuring quality and international competitiveness.
+          </p>
         </div>
       </div>
 
       {/* Card 3 */}
-      <div className="cursor-pointer relative group rounded-2xl p-6 bg-white border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center flex flex-col items-center">
-        {/* Absolute Centered Floating Icon Badge */}
-        <div className="absolute -top-7 left-1/2 -translate-x-1/2 bg-gradient-to-br from-[#1d0d66] to-[#1d0d66] w-14 h-14 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-red-900/20 group-hover:scale-110 group-hover:rotate-3 transition duration-300">
-          <Globe className="w-6 h-6" />
+      <div className="group relative rounded-2xl p-6 bg-white border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center">
+
+        <div className="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 rounded-2xl bg-white shadow-md flex items-center justify-center border border-slate-100">
+          <Globe className="w-6 h-6 text-blue-600" />
         </div>
-        <div className="pt-8 flex-1 flex flex-col justify-between">
-          <div>
-            <h3 className="text-lg font-bold text-slate-950 mb-3 transition-colors duration-300 group-hover:text-[#1d0d66]">
-              Global Certificate
-            </h3>
-            <p className="text-slate-600 text-sm leading-relaxed font-light">
-              Receive internationally recognized certificates for your academic achievements.
-            </p>
-          </div>
+
+        <div className="pt-10">
+          <h3 className="text-lg font-semibold text-slate-900 mb-3 group-hover:text-blue-700 transition-colors">
+            Global Certificate
+          </h3>
+          <p className="text-sm text-slate-600 leading-relaxed">
+            Receive internationally recognized certificates for your academic achievements.
+          </p>
         </div>
       </div>
 
       {/* Card 4 */}
-      <div className="cursor-pointer relative group rounded-2xl p-6 bg-white border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center flex flex-col items-center">
-        {/* Absolute Centered Floating Icon Badge */}
-        <div className="absolute -top-7 left-1/2 -translate-x-1/2 bg-gradient-to-br from-[#1d0d66] to-[#1d0d66] w-14 h-14 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-red-900/20 group-hover:scale-110 group-hover:rotate-3 transition duration-300">
-          <ShieldCheck className="w-6 h-6" />
+      <div className="group relative rounded-2xl p-6 bg-white border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center">
+
+        <div className="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 rounded-2xl bg-white shadow-md flex items-center justify-center border border-slate-100">
+          <ShieldCheck className="w-6 h-6 text-blue-600" />
         </div>
-        <div className="pt-8 flex-1 flex flex-col justify-between">
-          <div>
-            <h3 className="text-lg font-bold text-slate-950 mb-3 transition-colors duration-300 group-hover:text-[#1d0d66]">
-              Safe Learning
-            </h3>
-            <p className="text-slate-600 text-sm leading-relaxed font-light">
-              Modern facilities and resources for a secure learning environment.
-            </p>
-          </div>
+
+        <div className="pt-10">
+          <h3 className="text-lg font-semibold text-slate-900 mb-3 group-hover:text-blue-700 transition-colors">
+            Safe Learning
+          </h3>
+          <p className="text-sm text-slate-600 leading-relaxed">
+            Modern facilities and resources for a secure learning environment.
+          </p>
         </div>
       </div>
 
