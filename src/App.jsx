@@ -195,7 +195,7 @@ const scrollRef = useRef(null);
           </a>
 
           {/* Desktop Menu */}
-          <nav className="topnav hidden items-center lg:space-x-2 font-medium text-[15px] lg:text-base">
+<nav className="topnav hidden lg:flex items-center lg:space-x-2 font-medium text-[15px] lg:text-base">
             <ul className="flex items-center space-x-1 lg:space-x-3">
               <li>
                 <a href="#" className="px-3 py-2 rounded-lg hover:bg-white/10 hover:text-[#ffdddc] transition-all duration-200">
